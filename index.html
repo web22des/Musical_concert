@@ -25,7 +25,715 @@
     <!-- Конец -->
 
     <div class="main">
-        В данном блоке размещается верстка
+        <link rel="stylesheet" href="css/style.css">
+        <body>
+            <div class="wrapper">
+                <header class="header">
+                    <div class="header__container">
+                        <a class="header__logo" href="https://dequeuniversity.com/" aria-label="Home"><img src="img/Icons/logo.svg" alt="logo"></a>
+                        <div class="header__menu menu">
+                            <button type="submit" class="menu__icon icon-menu" aria-label="Open menu"><span></span></button>
+                            <nav class="menu__body">
+                                <ul class="menu__list">
+                                    <li><a data-goto=".page__section--1" href="https://dequeuniversity.com/" class="menu__link" aria-label="Home">Home</a></li><!-- Home data-goto=".page__section--1" -->
+                                    <li><a href="https://developers.google.com/search/docs/" aria-label="Speakers" class="menu__link">Speakers</a>
+                                        <span class="menu__arrow"></span>
+                                        <ul class="menu__sub-list">
+                                            <li><a href="https://developers.google.com/search/docs/" aria-label="Раздел страницы-1" class="menu__sub-link">Раздел страницы-1</a></li>
+                                            <li><a href="https://developers.google.com/search/docs/" aria-label="Раздел страницы-1" class="menu__sub-link">Раздел страницы-1</a></li>
+                                            <li><a href="https://developers.google.com/search/docs/" aria-label="Раздел страницы-1" class="menu__sub-link">Раздел страницы-1</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="https://developers.google.com/search/docs/" aria-label="Добавить в корзину" class="menu__link">Schedule</a>
+                                        <span class="menu__arrow"></span>
+                                        <ul class="menu__sub-list">
+                                            <li><a href="https://developers.google.com/search/docs/" aria-label="Раздел страницы-1" class="menu__sub-link">Раздел страницы-1</a></li>
+                                            <li><a href="https://developers.google.com/search/docs/" aria-label="Раздел страницы-1" class="menu__sub-link">Раздел страницы-1</a></li>
+                                            <li><a href="https://developers.google.com/search/docs/" aria-label="Раздел страницы-1" class="menu__sub-link">Раздел страницы-1</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a data-goto=".page__section--2" href="https://dequeuniversity.com/" class="menu__link" aria-label="Contact Us">Contact Us</a></li>
+                                    <li><button type="submit" class="button button--head" aria-label="Get ticets">Get ticets</button></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </header>
+                <main class="page">
+                    <div class="top">
+                        <div class="top__content">
+                            <h1 class="top__title">The Best experience of <span class="top__color2">music</span> in 2021</h1>
+                            <div class="top__inner">
+                                <p class="top__text">A grand musical marathon. Hits of the autumn season. World-class stars. Hurry up to order tickets with great benefits.</p>
+                            </div>
+                            <div class="top__navigacion">
+                                <button type="submit" class="button button--top">Get Started</button>
+                                <a class="top__link" href="">Watch Video</a>
+                            </div>
+                        </div>
+                        <div class="top__timer" id="timer"></div>
+                    </div>
+                    <div class="category">
+                        <div class="category__container">
+                            <p class="section-title"><span class="section-title--color">Explore</span> By Category</p>
+                        </div>
+                        <div class="category__inner">
+                            <div class="category__card card-one">
+                                <div class="card__inner">
+                                    <picture><source srcset="img/Icons/pop-lite.webp" type="image/webp"><img class="card__images-lite" src="img/Icons/pop-lite.png" alt="pop music"></picture>
+                                    <picture><source srcset="img/Icons/pop-dark.webp" type="image/webp"><img class="card__images-dark" src="img/Icons/pop-dark.png" alt="pop music"></picture>
+                                    <h3 class="card__title">Pop</h3>
+                                    <p class="card__text">Musica pop, omnium gratissimorum et popularium anni exeuntis, necnon aurei ultimi decennii</p>
+                                </div>
+                            </div>
+                            <div class="category__card card-two">
+                                <div class="card__inner">
+                                    <picture><source srcset="img/Icons/folk-lite.webp" type="image/webp"><img class="card__images-lite" src="img/Icons/folk-lite.png" alt="pop music"></picture>
+                                    <picture><source srcset="img/Icons/folk-dark.webp" type="image/webp"><img class="card__images-dark" src="img/Icons/folk-dark.png" alt="pop music"></picture>
+                                    <h3 class="card__title">Folk</h3>
+                                    <p class="card__text">Musica pop, omnium gratissimorum et popularium anni exeuntis, necnon aurei ultimi decennii</p>
+                                </div>
+                            </div>
+                            <div class="category__card card-three">
+                                <div class="card__inner">
+                                    <picture><source srcset="img/Icons/injstrumental-lite.webp" type="image/webp"><img class="card__images-lite" src="img/Icons/injstrumental-lite.png" alt="instrumental music"></picture>
+                                    <picture><source srcset="img/Icons/injstrumental-dark.webp" type="image/webp"><img class="card__images-dark" src="img/Icons/injstrumental-dark.png" alt="instrumental music"></picture>
+                                    <h3 class="card__title">Instrumental</h3>
+                                    <p class="card__text">Musica pop, omnium gratissimorum et popularium anni exeuntis, necnon aurei ultimi decennii</p>
+                                </div>
+                            </div>
+                            <div class="category__card card-for">
+                                <div class="card__inner">
+                                    <picture><source srcset="img/Icons/rock-lite.webp" type="image/webp"><img class="card__images-lite" src="img/Icons/rock-lite.png" alt="rock music"></picture>
+                                    <picture><source srcset="img/Icons/rock-dark.webp" type="image/webp"><img class="card__images-dark" src="img/Icons/rock-dark.png" alt="rock music"></picture>
+                                    <h3 class="card__title">Rock</h3>
+                                    <p class="card__text">Musica pop, omnium gratissimorum et popularium anni exeuntis, necnon aurei ultimi decennii</p>
+                                </div>
+                            </div>
+                            <div class="category__card card-five">
+                                <div class="card__inner">
+                                    <picture><source srcset="img/Icons/jazz-lite.webp" type="image/webp"><img class="card__images-lite" src="img/Icons/jazz-lite.png" alt="jazz music"></picture>
+                                    <picture><source srcset="img/Icons/jazz-dark.webp" type="image/webp"><img class="card__images-dark" src="img/Icons/jazz-dark.png" alt="jazz music"></picture>
+                                    <h3 class="card__title">Jazz</h3>
+                                    <p class="card__text">Musica pop, omnium gratissimorum et popularium anni exeuntis, necnon aurei ultimi decennii</p>
+                                </div>
+                            </div>
+                        </div>
+                        <picture><source srcset="img/Icons/Confetti.webp" type="image/webp"><img class="element-one" src="img/Icons/Confetti.png" alt="image"></picture>
+                        <picture><source srcset="img/Icons/Confetti-blue.webp" type="image/webp"><img class="element-two" src="img/Icons/Confetti-blue.png" alt="image"></picture>
+                        <picture><source srcset="img/Icons/Confetti-circle.webp" type="image/webp"><img class="element-three" src="img/Icons/Confetti-circle.png" alt="image"></picture>
+                        <picture><source srcset="img/Icons/Confetti-dark.webp" type="image/webp"><img class="element-for" src="img/Icons/Confetti-dark.png" alt="image"></picture>
+                    </div>
+                    <div class="about">
+                        <div class="about__container">
+                            <div class="section-inner">
+                                <div class="column about__column-images">
+                                    <picture><source srcset="img/content/images-1.webp" type="image/webp"><img class="about__images about__images--fon" src="img/content/images-1.png" alt="image"></picture>
+                                    <picture><source srcset="img/content/images-2.webp" type="image/webp"><img class="about__images about__images--front" src="img/content/images-2.jpg" alt="concert"></picture>
+                                </div>
+                                <div class="column about__column-content">
+                                    <h2 class="section-title">About Musik</h2>
+                                    <p class="section-text">Fusce justo mi, vehicula id arcu et, dapibus tristique lectus. Vivamus a elit sodales, tincidunt nunc non, maximus lacus. Fusce a augue sed dolor auctor iaculis vitae id mauris. Integer ut lectus non neque suscipit luctus. Mauris et erat id ipsum condimentum cursus. Sed tempus enim non massa mattis iaculis. In quis massa risus</p>
+                                    <button type="submit" class="button button--section">Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <picture><source srcset="img/Icons/Confetti-zig.webp" type="image/webp"><img class="about__fon" src="img/Icons/Confetti-zig.png" alt="image"></picture>
+                    </div>
+                    <div class="singers">
+                        <div class="singers__container">
+                            <div class="singers__column-content">
+                                <p class="section-title">Singers</p>
+                                <p class="section-text">Fusce justo mi, vehicula id arcu et, dapibus tristique lectus. Vivamus a elit sodales, tincidunt nunc non, maximus lacus. Fusce a augue sed dolor auctor iaculis vitae id mauris. Integer ut lectus non neque suscipit luctus. Mauris et erat id ipsum condimentum cursus. Sed tempus enim non massa mattis iaculis. In quis massa risus</p>
+                                <button type="submit" class="button button--section">View all singers</button>
+                            </div>
+                            <div class="singers__gallery">
+                                <div class="singers__block-one">
+                                    <picture><source srcset="img/content/pic-1.webp" type="image/webp"><img class="singers__img-one" src="img/content/pic-1.jpg" alt="image"></picture>
+                                    <picture><source srcset="img/content/pic-1bg.webp" type="image/webp"><img class="singers__img-one-bg" src="img/content/pic-1bg.png" alt="image"></picture>
+                                </div>
+                                <div class="singers__block-two">
+                                    <picture><source srcset="img/content/pic-2.webp" type="image/webp"><img class="singers__img-two" src="img/content/pic-2.jpg" alt="image"></picture>
+                                    <picture><source srcset="img/content/pic-2bg.webp" type="image/webp"><img class="singers__img-two-bg" src="img/content/pic-2bg.png" alt="image"></picture>
+                                </div>
+                                <div class="singers__block-three">
+                                    <picture><source srcset="img/content/pic-3.webp" type="image/webp"><img class="singers__img-three" src="img/content/pic-3.jpg" alt="image"></picture>
+                                    <picture><source srcset="img/content/pic-3bg.webp" type="image/webp"><img class="singers__img-three-bg" src="img/content/pic-3bg.png" alt="image"></picture>
+                                </div>
+                                <div class="singers__block-for">
+                                    <picture><source srcset="img/content/pic-4.webp" type="image/webp"><img class="singers__img-for" src="img/content/pic-4.jpg" alt="image"></picture>
+                                    <picture><source srcset="img/content/pic-4bg.webp" type="image/webp"><img class="singers__img-for-bg" src="img/content/pic-4bg.png" alt="image"></picture>
+                                </div>
+                            </div>
+                        </div>
+                        <picture><source srcset="img/Icons/sin-1bg.webp" type="image/webp"><img class="singers__fon-one" src="img/Icons/sin-1bg.png" alt="image"></picture>
+                        <picture><source srcset="img/Icons/triangle.webp" type="image/webp"><img class="singers__fon-two" src="img/Icons/triangle.png" alt="image"></picture>
+                        <picture><source srcset="img/Icons/triangle-2.webp" type="image/webp"><img class="singers__fon-three" src="img/Icons/triangle-2.png" alt="image"></picture>
+                    </div>
+                    <div class="event">
+                        <div class="event__container">
+                            <p class="section-title">Event Schedule</p>
+                            <div data-tabs class="tabs">
+                                <nav data-tabs-titles class="tabs__navigation">
+                                    <div class="tabs__title _tab-active">
+                                        <h3 class="title-three">Day 01</h3>
+                                        <h5 class="title-for">16 August</h5>
+                                    </div>
+                                    <div class="tabs__title">
+                                        <h3 class="title-three">Day 02</h3>
+                                        <h5 class="title-for">17 August</h5>
+                                    </div>
+                                    <div class="tabs__title">
+                                        <h3 class="title-three">Day 03</h3>
+                                        <h5 class="title-for">18 August</h5>
+                                    </div>
+                                </nav>
+                                <div data-tabs-body class="tabs__content">
+                                    <div class="tabs__body">
+                                        <div class="grid-container">
+                                            <p class="subtitle-one">Time</p>
+                                            <p class="time-one">11:00 AM to 12:00 PM</p>
+                                            <div class="content-one">
+                                                <p class="content-text">Vestibulum vel eros vel metus lacinia feugiat a nec metus. </p>
+                                            </div>
+                                            <div class="speakers-one">
+                                                <div class="speakers-cards__card-grup">
+                                                    <div class="speakers-card">
+                                                        <picture><source srcset="img/content/ava-1.webp" type="image/webp"><img class="speakers-card__img" src="img/content/ava-1.png" alt="icon speakers"></picture>
+                                                        <div class="speakers-card__items">
+                                                            <p class="speakers-card__title">Emma Outson</p>
+                                                            <p class="speakers-card__text">Booth: <span class="speakers-card__sp-text">2F12</span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="prev-one"><button class="prev-one__text">Preview</button></div>
+                                            <p class="subtitle-two">Content</p>
+                                            <p class="time-two">12:00 PM to 03:00 PM</p>
+                                            <div class="content-two">
+                                                <p class="content-text"></p>Duis nec sodales nibh. Proin lectus tortor, rutrum vel vulputate vitae, fringilla id magna. Vestibulum ornare eget urna nec pulvinar. Praesent porttitor convallis blandit. Fusce vel egestas dolor. Donec eu augue enim. Donec rutrum non lacus ac rhoncus. Morbi quis luctus leo, nec cursus ex.
+                                            </div>
+                                            <div class="speakers-two">
+                                                <div class="speakers-cards__card-grup">
+                                                    <div class="speakers-card">
+                                                        <picture><source srcset="img/content/ava-2.webp" type="image/webp"><img class="speakers-card__img" src="img/content/ava-2.png" alt="icon speakers"></picture>
+                                                        <div class="speakers-card__items">
+                                                            <p class="speakers-card__title">Bob John</p>
+                                                            <p class="speakers-card__text">Booth: <span class="speakers-card__sp-text">3G12</span></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="speakers-card">
+                                                        <picture><source srcset="img/content/ava-1.webp" type="image/webp"><img class="speakers-card__img" src="img/content/ava-1.png" alt="icon speakers"></picture>
+                                                        <div class="speakers-card__items">
+                                                            <p class="speakers-card__title">Yui Ronald</p>
+                                                            <p class="speakers-card__text">Booth: <span class="speakers-card__sp-text">2F12</span></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="speakers-card">
+                                                        <picture><source srcset="img/content/ava-3.webp" type="image/webp"><img class="speakers-card__img" src="img/content/ava-3.png" alt="icon speakers"></picture>
+                                                        <div class="speakers-card__items">
+                                                            <p class="speakers-card__title">Emma Satoshi</p>
+                                                            <p class="speakers-card__text">Booth: <span class="speakers-card__sp-text">2A35</span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="prev-two"><button class="prev-two__text">Live</button></div>
+                                            <p class="subtitle-three">Speakers</p>
+                                            <p class="time-three">03:00 PM to 04:00 PM</p>
+                                            <div class="content-three">
+                                                <p class="content-text"></p>Vestibulum vel eros vel metus lacinia feugiat a nec metus.
+                                            </div>
+                                            <div class="speakers-three">
+                                                <div class="speakers-cards__card-grup">
+                                                    <div class="speakers-card">
+                                                        <picture><source srcset="img/content/ava-4.webp" type="image/webp"><img class="speakers-card__img" src="img/content/ava-4.png" alt="icon speakers"></picture>
+                                                        <div class="speakers-card__items">
+                                                            <p class="speakers-card__title">Sasha Jackson</p>
+                                                            <p class="speakers-card__text">Booth: <span class="speakers-card__sp-text">2F18</span></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="speakers-card">
+                                                        <picture><source srcset="img/content/ava-5.webp" type="image/webp"><img class="speakers-card__img" src="img/content/ava-5.png" alt="icon speakers"></picture>
+                                                        <div class="speakers-card__items">
+                                                            <p class="speakers-card__title">Diana Brock</p>
+                                                            <p class="speakers-card__text">Booth: <span class="speakers-card__sp-text">2F24</span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="prev-three"><button class="prev-three__text">Upcoming</button></div>
+                                        </div>
+                                    </div>
+                                    <div class="tabs__body">
+                                        <div class="grid-container">
+                                            <p class="subtitle-one">Time</p>
+                                            <p class="time-one">11:00 AM to 12:00 PM</p>
+                                            <div class="content-one">
+                                                <p class="content-text">Vestibulum vel eros vel metus lacinia feugiat a nec metus. </p>
+                                            </div>
+                                            <div class="speakers-one">
+                                                <div class="speakers-cards__card-grup">
+                                                    <div class="speakers-card">
+                                                        <picture><source srcset="img/content/ava-4.webp" type="image/webp"><img class="speakers-card__img" src="img/content/ava-4.png" alt="icon speakers"></picture>
+                                                        <div class="speakers-card__items">
+                                                            <p class="speakers-card__title">Aloxa Vera</p>
+                                                            <p class="speakers-card__text">Booth: <span class="speakers-card__sp-text">2F12</span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="prev-one"><button class="prev-one__text">Preview</button></div>
+                                            <p class="subtitle-two">Content</p>
+                                            <p class="time-two">12:00 PM to 03:00 PM</p>
+                                            <div class="content-two">
+                                                <p class="content-text"></p>Duis nec sodales nibh. Proin lectus tortor, rutrum vel vulputate vitae, fringilla id magna. Vestibulum ornare eget urna nec pulvinar. Praesent porttitor convallis blandit. Fusce vel egestas dolor. Donec eu augue enim. Donec rutrum non lacus ac rhoncus. Morbi quis luctus leo, nec cursus ex.
+                                            </div>
+                                            <div class="speakers-two">
+                                                <div class="speakers-cards__card-grup">
+                                                    <div class="speakers-card">
+                                                        <picture><source srcset="img/content/ava-2.webp" type="image/webp"><img class="speakers-card__img" src="img/content/ava-2.png" alt="icon speakers"></picture>
+                                                        <div class="speakers-card__items">
+                                                            <p class="speakers-card__title">Bob John</p>
+                                                            <p class="speakers-card__text">Booth: <span class="speakers-card__sp-text">3G12</span></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="speakers-card">
+                                                        <picture><source srcset="img/content/ava-1.webp" type="image/webp"><img class="speakers-card__img" src="img/content/ava-1.png" alt="icon speakers"></picture>
+                                                        <div class="speakers-card__items">
+                                                            <p class="speakers-card__title">Yui Ronald</p>
+                                                            <p class="speakers-card__text">Booth: <span class="speakers-card__sp-text">2F12</span></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="speakers-card">
+                                                        <picture><source srcset="img/content/ava-3.webp" type="image/webp"><img class="speakers-card__img" src="img/content/ava-3.png" alt="icon speakers"></picture>
+                                                        <div class="speakers-card__items">
+                                                            <p class="speakers-card__title">Emma Satoshi</p>
+                                                            <p class="speakers-card__text">Booth: <span class="speakers-card__sp-text">2A35</span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="prev-two"><button class="prev-two__text">Live</button></div>
+                                            <p class="subtitle-three">Speakers</p>
+                                            <p class="time-three">03:00 PM to 04:00 PM</p>
+                                            <div class="content-three">
+                                                <p class="content-text"></p>Vestibulum vel eros vel metus lacinia feugiat a nec metus.
+                                            </div>
+                                            <div class="speakers-three">
+                                                <div class="speakers-cards__card-grup">
+                                                    <div class="speakers-card">
+                                                        <picture><source srcset="img/content/ava-4.webp" type="image/webp"><img class="speakers-card__img" src="img/content/ava-4.png" alt="icon speakers"></picture>
+                                                        <div class="speakers-card__items">
+                                                            <p class="speakers-card__title">Sasha Jackson</p>
+                                                            <p class="speakers-card__text">Booth: <span class="speakers-card__sp-text">2F18</span></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="speakers-card">
+                                                        <picture><source srcset="img/content/ava-5.webp" type="image/webp"><img class="speakers-card__img" src="img/content/ava-5.png" alt="icon speakers"></picture>
+                                                        <div class="speakers-card__items">
+                                                            <p class="speakers-card__title">Diana Brock</p>
+                                                            <p class="speakers-card__text">Booth: <span class="speakers-card__sp-text">2F24</span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="prev-three"><button class="prev-three__text">Upcoming</button></div>
+                                        </div>
+                                    </div>
+                                    <div class="tabs__body">
+                                        <div class="grid-container">
+                                            <p class="subtitle-one">Time</p>
+                                            <p class="time-one">11:00 AM to 12:00 PM</p>
+                                            <div class="content-one">
+                                                <p class="content-text">Vestibulum vel eros vel metus lacinia feugiat a nec metus. </p>
+                                            </div>
+                                            <div class="speakers-one">
+                                                <div class="speakers-cards__card-grup">
+                                                    <div class="speakers-card">
+                                                        <picture><source srcset="img/content/ava-5.webp" type="image/webp"><img class="speakers-card__img" src="img/content/ava-5.png" alt="icon speakers"></picture>
+                                                        <div class="speakers-card__items">
+                                                            <p class="speakers-card__title">Eric Upicallo</p>
+                                                            <p class="speakers-card__text">Booth: <span class="speakers-card__sp-text">2F12</span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="prev-one"><button class="prev-one__text">Preview</button></div>
+                                            <p class="subtitle-two">Content</p>
+                                            <p class="time-two">12:00 PM to 03:00 PM</p>
+                                            <div class="content-two">
+                                                <p class="content-text"></p>Duis nec sodales nibh. Proin lectus tortor, rutrum vel vulputate vitae, fringilla id magna. Vestibulum ornare eget urna nec pulvinar. Praesent porttitor convallis blandit. Fusce vel egestas dolor. Donec eu augue enim. Donec rutrum non lacus ac rhoncus. Morbi quis luctus leo, nec cursus ex.
+                                            </div>
+                                            <div class="speakers-two">
+                                                <div class="speakers-cards__card-grup">
+                                                    <div class="speakers-card">
+                                                        <picture><source srcset="img/content/ava-2.webp" type="image/webp"><img class="speakers-card__img" src="img/content/ava-2.png" alt="icon speakers"></picture>
+                                                        <div class="speakers-card__items">
+                                                            <p class="speakers-card__title">Bob John</p>
+                                                            <p class="speakers-card__text">Booth: <span class="speakers-card__sp-text">3G12</span></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="speakers-card">
+                                                        <picture><source srcset="img/content/ava-1.webp" type="image/webp"><img class="speakers-card__img" src="img/content/ava-1.png" alt="icon speakers"></picture>
+                                                        <div class="speakers-card__items">
+                                                            <p class="speakers-card__title">Yui Ronald</p>
+                                                            <p class="speakers-card__text">Booth: <span class="speakers-card__sp-text">2F12</span></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="speakers-card">
+                                                        <picture><source srcset="img/content/ava-3.webp" type="image/webp"><img class="speakers-card__img" src="img/content/ava-3.png" alt="icon speakers"></picture>
+                                                        <div class="speakers-card__items">
+                                                            <p class="speakers-card__title">Emma Satoshi</p>
+                                                            <p class="speakers-card__text">Booth: <span class="speakers-card__sp-text">2A35</span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="prev-two"><button class="prev-two__text">Live</button></div>
+                                            <p class="subtitle-three">Speakers</p>
+                                            <p class="time-three">03:00 PM to 04:00 PM</p>
+                                            <div class="content-three">
+                                                <p class="content-text"></p>Vestibulum vel eros vel metus lacinia feugiat a nec metus.
+                                            </div>
+                                            <div class="speakers-three">
+                                                <div class="speakers-cards__card-grup">
+                                                    <div class="speakers-card">
+                                                        <picture><source srcset="img/content/ava-4.webp" type="image/webp"><img class="speakers-card__img" src="img/content/ava-4.png" alt="icon speakers"></picture>
+                                                        <div class="speakers-card__items">
+                                                            <p class="speakers-card__title">Sasha Jackson</p>
+                                                            <p class="speakers-card__text">Booth: <span class="speakers-card__sp-text">2F18</span></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="speakers-card">
+                                                        <picture><source srcset="img/content/ava-5.webp" type="image/webp"><img class="speakers-card__img" src="img/content/ava-5.png" alt="icon speakers"></picture>
+                                                        <div class="speakers-card__items">
+                                                            <p class="speakers-card__title">Diana Brock</p>
+                                                            <p class="speakers-card__text">Booth: <span class="speakers-card__sp-text">2F24</span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="prev-three"><button class="prev-three__text">Upcoming</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <picture><source srcset="img/Icons/Confetti-7.webp" type="image/webp"><img class="event-fon-one" src="img/Icons/Confetti-7.png" alt="image"></picture>
+                        <picture><source srcset="img/Icons/Confetti-8.webp" type="image/webp"><img class="event-fon-two" src="img/Icons/Confetti-8.png" alt="image"></picture>
+                        <picture><source srcset="img/Icons/Confetti-9.webp" type="image/webp"><img class="event-fon-three" src="img/Icons/Confetti-9.png" alt="image"></picture>
+                    </div>
+                    <div class="choose">
+                        <picture><source srcset="img/Icons/Confetti-10.webp" type="image/webp"><img class="choose__fon-one" src="img/Icons/Confetti-10.png" alt="image"></picture>
+                        <picture><source srcset="img/Icons/Confetti-circle.webp" type="image/webp"><img class="choose__fon-two" src="img/Icons/Confetti-circle.png" alt="image"></picture>
+                        <picture><source srcset="img/Icons/Confetti-dark.webp" type="image/webp"><img class="choose__fon-three" src="img/Icons/Confetti-dark.png" alt="image"></picture>
+                        <div class="choose__container">
+                            <p class="section-title section-title--position">Choose a Tier thats right for you</p>
+                            <div class="choose__card-grup">
+                                <div class="choose__card">
+                                    <div class="card--indicator-basic"></div>
+                                    <div class="choose__card--inner">
+                                        <p class="choose__card-subtitle">Basic</p>
+                                        <p class="choose__card-price top__title">$100</p>
+                                        <p class="choose__card-seat">1 Seat Available</p>
+                                        <p class="choose__card-text">Access to Wifi Router</p>
+                                        <p class="choose__card-text">Free Food & Coffee</p>
+                                        <button class="button btn">Get Tickets</button>
+                                    </div>
+                                </div>
+                                <div class="choose__card">
+                                    <div class="card--indicator-standart"></div>
+                                    <div class="choose__card--inner">
+                                        <p class="choose__card-subtitle choose__card--col-two">Standard</p>
+                                        <p class="choose__card-price choose__card--col-two top__title">$150</p>
+                                        <p class="choose__card-seat">1 Seat Available</p>
+                                        <p class="choose__card-seat">Access to Wifi Router</p>
+                                        <p class="choose__card-text">Free Food & Coffee</p>
+                                        <button class="button btn">Get Tickets</button>
+                                    </div>
+                                </div>
+                                <div class="choose__card choose__card--color--three">
+                                    <div class="card--indicator-premium"></div>
+                                    <div class="choose__card--inner">
+                                        <p class="choose__card-subtitle choose__card--col-three">Premium</p>
+                                        <p class="choose__card-price choose__card--col-three top__title">$200</p>
+                                        <p class="choose__card-seat">1 Seat Available</p>
+                                        <p class="choose__card-seat">Access to Wifi Router</p>
+                                        <p class="choose__card-seat">Free Food & Coffee</p>
+                                        <button class="button btn">Get Tickets</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sponsors">
+                        <div class="sponsors__container">
+                            <p class="section-title section-title--position2">Our Sponsors</p>
+                            <div class="sponsors__cards-grups">
+                                <picture><source srcset="img/Icons/icon-1.webp" type="image/webp"><img class="sponsors__img" src="img/Icons/icon-1.png" alt="image"></picture>
+                                <picture><source srcset="img/Icons/icon-2.webp" type="image/webp"><img class="sponsors__img" src="img/Icons/icon-2.png" alt="image"></picture>
+                                <picture><source srcset="img/Icons/icon-3.webp" type="image/webp"><img class="sponsors__img" src="img/Icons/icon-3.png" alt="image"></picture>
+                                <picture><source srcset="img/Icons/icon-4.webp" type="image/webp"><img class="sponsors__img" src="img/Icons/icon-4.png" alt="image"></picture>
+                                <picture><source srcset="img/Icons/icon-5.webp" type="image/webp"><img class="sponsors__img" src="img/Icons/icon-5.png" alt="image"></picture>
+                                <picture><source srcset="img/Icons/icon-6.webp" type="image/webp"><img class="sponsors__img" src="img/Icons/icon-6.png" alt="image"></picture>
+                                <picture><source srcset="img/Icons/icon-7.webp" type="image/webp"><img class="sponsors__img" src="img/Icons/icon-7.png" alt="image"></picture>
+                                <picture><source srcset="img/Icons/icon-8.webp" type="image/webp"><img class="sponsors__img" src="img/Icons/icon-8.png" alt="image"></picture>
+                            </div>
+                            <button type="submit" class="button sponsors__btn">Become a Sponsor</button>
+                        </div>
+                    </div>
+                    <div class="testimonials">
+                        <p class="section-title section-title--position">Our Sponsors</p>
+                        <div class="testimonials swiper">
+                            <div class="testimonials__wrapper swiper-wrapper">
+                                <div class="testimonials__slide swiper-slide">
+                                    <div class="testimonials__card">
+                                        <div class="testimonials__inner">
+                                            <p class="testimonials__content">1. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                                        </div>
+                                        <picture><source srcset="img/content/ava-1.webp" type="image/webp"><img class="testimonials__img" src="img/content/ava-1.png" alt="icon speakers"></picture>
+                                        <p class="testimonials__holder">Ellie James</p>
+                                        <a href="#" class="testimonials__mail">lorem.com</a>
+                                    </div>
+                                </div>
+                                <div class="testimonials__slide swiper-slide">
+                                    <div class="testimonials__card">
+                                        <div class="testimonials__inner">
+                                            <p class="testimonials__content">2.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                                        </div>
+                                        <picture><source srcset="img/content/ava-2.webp" type="image/webp"><img class="testimonials__img" src="img/content/ava-2.png" alt="icon speakers"></picture>
+                                        <p class="testimonials__holder">Ellie James</p>
+                                        <a href="#" class="testimonials__mail">lorem.com</a>
+                                    </div>
+                                </div>
+                                <div class="testimonials__slide swiper-slide">
+                                    <div class="testimonials__card">
+                                        <div class="testimonials__inner">
+                                            <p class="testimonials__content">3. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                                        </div>
+                                        <picture><source srcset="img/content/ava-3.webp" type="image/webp"><img class="testimonials__img" src="img/content/ava-3.png" alt="icon speakers"></picture>
+                                        <p class="testimonials__holder">Ellie James</p>
+                                        <a href="#" class="testimonials__mail">lorem.com</a>
+                                    </div>
+                                </div>
+                                <div class="testimonials__slide swiper-slide">
+                                    <div class="testimonials__card">
+                                        <div class="testimonials__inner">
+                                            <p class="testimonials__content">4. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                                        </div>
+                                        <picture><source srcset="img/content/ava-1.webp" type="image/webp"><img class="testimonials__img" src="img/content/ava-1.png" alt="icon speakers"></picture>
+                                        <p class="testimonials__holder">Ellie James</p>
+                                        <a href="#" class="testimonials__mail">lorem.com</a>
+                                    </div>
+                                </div>
+                                <div class="testimonials__slide swiper-slide">
+                                    <div class="testimonials__card">
+                                        <div class="testimonials__inner">
+                                            <p class="testimonials__content">5. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                                        </div>
+                                        <picture><source srcset="img/content/ava-2.webp" type="image/webp"><img class="testimonials__img" src="img/content/ava-2.png" alt="icon speakers"></picture>
+                                        <p class="testimonials__holder">Ellie James</p>
+                                        <a href="#" class="testimonials__mail">lorem.com</a>
+                                    </div>
+                                </div>
+                                <div class="testimonials__slide swiper-slide">
+                                    <div class="testimonials__card">
+                                        <div class="testimonials__inner">
+                                            <p class="testimonials__content">6. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                                        </div>
+                                        <picture><source srcset="img/content/ava-3.webp" type="image/webp"><img class="testimonials__img" src="img/content/ava-3.png" alt="icon speakers"></picture>
+                                        <p class="testimonials__holder">Ellie James</p>
+                                        <a href="#" class="testimonials__mail">lorem.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="best">
+                        <picture><source srcset="img/Icons/best-fon.webp" type="image/webp"><img class="best__fon" src="img/Icons/best-fon.png" alt=""></picture>
+                        <div class="best__container">
+                            <p class="section-title">See our Best Shots</p>
+                        </div>
+                        <div class="best__slider swiper">
+                            <div class="best__wrapper swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="best__card">
+                                        <picture><source srcset="img/best/best-1.webp" type="image/webp"><img class="best__img" src="img/best/best-1.jpg" alt="image"></picture>
+                                        <div class="best__like-inner">
+                                            <span class="best__like">412</span>
+                                            <a href="#" class="best__coment">140</a>
+                                            <p class="best__title">Lorem Ipsum Amet</p>
+                                            <div class="best__list">
+                                                <a href="#" class="best__link">#music</a>
+                                                <a href="#" class="best__link">#concert</a>
+                                                <a href="#" class="best__link">#conference</a>
+                                                <a href="#" class="best__link">#london</a>
+                                                <a href="#" class="best__link">#event</a>
+                                                <a href="#" class="best__link">#artist</a>
+                                                <a href="#" class="best__link">#dj</a>
+                                                <a href="#" class="best__link">#soundtrack</a>
+                                                <a href="#" class="best__link">#dance</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="best__card">
+                                        <picture><source srcset="img/best/best-2.webp" type="image/webp"><img class="best__img" src="img/best/best-2.jpg" alt="image"></picture>
+                                        <div class="best__like-inner">
+                                            <span class="best__like best__like--active">412</span>
+                                            <a href="#" class="best__coment">140</a>
+                                            <p class="best__title">Lorem Ipsum Amet</p>
+                                            <div class="best__list">
+                                                <a href="#" class="best__link">#music</a>
+                                                <a href="#" class="best__link">#concert</a>
+                                                <a href="#" class="best__link">#conference</a>
+                                                <a href="#" class="best__link">#london</a>
+                                                <a href="#" class="best__link">#event</a>
+                                                <a href="#" class="best__link">#artist</a>
+                                                <a href="#" class="best__link">#dj</a>
+                                                <a href="#" class="best__link">#soundtrack</a>
+                                                <a href="#" class="best__link">#dance</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="best__card">
+                                        <picture><source srcset="img/best/best-3.webp" type="image/webp"><img class="best__img" src="img/best/best-3.jpg" alt="image"></picture>
+                                        <div class="best__like-inner">
+                                            <span class="best__like">412</span>
+                                            <a href="#" class="best__coment">140</a>
+                                            <p class="best__title">Lorem Ipsum Amet</p>
+                                            <div class="best__list">
+                                                <a href="#" class="best__link">#music</a>
+                                                <a href="#" class="best__link">#concert</a>
+                                                <a href="#" class="best__link">#conference</a>
+                                                <a href="#" class="best__link">#london</a>
+                                                <a href="#" class="best__link">#event</a>
+                                                <a href="#" class="best__link">#artist</a>
+                                                <a href="#" class="best__link">#dj</a>
+                                                <a href="#" class="best__link">#soundtrack</a>
+                                                <a href="#" class="best__link">#dance</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="best__card">
+                                        <picture><source srcset="img/best/best-4.webp" type="image/webp"><img class="best__img" src="img/best/best-4.jpg" alt="image"></picture>
+                                        <div class="best__like-inner">
+                                            <span class="best__like">412</span>
+                                            <a href="#" class="best__coment">140</a>
+                                            <p class="best__title">Lorem Ipsum Amet</p>
+                                            <div class="best__list">
+                                                <a href="#" class="best__link">#music</a>
+                                                <a href="#" class="best__link">#concert</a>
+                                                <a href="#" class="best__link">#conference</a>
+                                                <a href="#" class="best__link">#london</a>
+                                                <a href="#" class="best__link">#event</a>
+                                                <a href="#" class="best__link">#artist</a>
+                                                <a href="#" class="best__link">#dj</a>
+                                                <a href="#" class="best__link">#soundtrack</a>
+                                                <a href="#" class="best__link">#dance</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="best__card">
+                                        <picture><source srcset="img/best/best-5.webp" type="image/webp"><img class="best__img" src="img/best/best-5.jpg" alt="image"></picture>
+                                        <div class="best__like-inner">
+                                            <span class="best__like">412</span>
+                                            <a href="#" class="best__coment">140</a>
+                                            <p class="best__title">Lorem Ipsum Amet</p>
+                                            <div class="best__list">
+                                                <a href="#" class="best__link">#music</a>
+                                                <a href="#" class="best__link">#concert</a>
+                                                <a href="#" class="best__link">#conference</a>
+                                                <a href="#" class="best__link">#london</a>
+                                                <a href="#" class="best__link">#event</a>
+                                                <a href="#" class="best__link">#artist</a>
+                                                <a href="#" class="best__link">#dj</a>
+                                                <a href="#" class="best__link">#soundtrack</a>
+                                                <a href="#" class="best__link">#dance</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="s-button-prev"></button>
+                            <button type="submit" class="s-button-next"></button>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <div class="contact-form__inner">
+                            <div class="contact-form__contact">
+                                <p class="contact-form__title section-title">Contact us</p>
+                                <p class="contact-form__subtitle">Have an inquiry? Well be happy to assist you</p>
+                                <ul class="contact-form__list">
+                                    <li class="contact-form__items"><a href="tel:923336527366" class="contact-form__link contact-form__link--fhone">+92 333 6527366</a></li>
+                                    <li class="contact-form__items"><a href="mailto:abuzer@greelogix.com" class="contact-form__link contact-form__link--mail">abuzer@greelogix.com</a></li>
+                                    <li class="contact-form__items">
+                                        <p class="contact-form__geo">Plot 252, Block L Phase 2 Johar Town, Lahore, PK</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="contact-form__form">
+                                <div class="form">
+                                    <h2 class="form__title">Fill in your details</h2>
+                                    <div class="form__field">
+                                        <label class="form__label" for="name">Name</label>
+                                        <input class="form__input" type="text" id="name" name="name" placeholder="John Doe" autocomplete="on">
+                                        <span class="form__br form__br--color"></span>
+                                    </div>
+                                    <div class="form__field">
+                                        <label class="form__label" for="email">Email</label>
+                                        <input class="form__input" type="email" id="email" name="email" placeholder="johndoe2347@mail.com"  autocomplete="on">
+                                    </div>
+                                    <div class="form__field">
+                                        <textarea class="form__textarea" id="message" name="message"  autocomplete="on" placeholder="Duis nec sodales nibh. Proin lectus tortor, rutrum vel vulputate vitae, fringilla id magna. Vestibulum ornare eget urna nec pulvinar. Praesent porttitor convallis blandit. Fusce vel egestas dolor. Donec eu augue enim. Donec rutrum non lacus ac rhoncus. Morbi quis luctus leo, nec cursus ex"></textarea>
+                                        <label class="form__label" for="message"></label>
+                                    </div>
+                                    <button class="button sponsors__btn" type="submit">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <footer class="footer">
+                    <div class="footer__container">
+                        <a class="header__logo" href="https://dequeuniversity.com/" aria-label="Home"><img src="img/Icons/logo.svg" alt="logo"></a>
+                        <div class="footer__inner">
+                            <div class="footer__nav">
+                                <ul class="footer__list">
+                                    <li class="footer__items"><a href="#" class="footer__link">Home</a></li>
+                                    <li class="footer__items"><a href="#" class="footer__link">Company</a></li>
+                                    <li class="footer__items"><a href="#" class="footer__link">Blog</a></li>
+                                    <li class="footer__items"><a href="#" class="footer__link">Contact us</a></li>
+                                    <li class="footer__items"><a href="#" class="footer__link">sitemap</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__social">
+                                <div class="footer__block"></div>
+                                <ul class="social__list social">
+                                    <li class="social__items"><a href="#" class="social__link"><img class="social__img--fb" src="img/Icons/fb.svg" alt="go to facebook"></a></li>
+                                    <li class="social__items"><a href="#" class="social__link"><img class="social__img--twitter" src="img/Icons/twitter.svg" alt="go to twitter"></a></li>
+                                    <li class="social__items"><a href="#" class="social__link"><img class="social__img--linkedin" src="img/Icons/linkedin.svg" alt="go to linkedin"></a></li>
+                                    <li class="social__items"><a href="#" class="social__link"><img class="social__img--ou" src="img/Icons/instagram.svg" alt="go to instagram"></a></li>
+                                </ul>
+                                <div class="footer__copy">© musik.com, 2021 </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        
+            <script src="js/app.min.js?_v=20230919163902"></script>
+        </body>
+        
+        </html>
     </div>
 
 </body>
